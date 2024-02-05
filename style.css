@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+}
+
+.main {
+    margin-top: 50px;
+}
+
+.digit {
+    font-size: 124px;
+    font-family: 'Tinos', serif;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin: 20px;
+    font-size: 24px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#start-btn {
+    background-color: rgba(108, 218, 108, 0.281);
+    color: rgb(6, 247, 70);
+}
+
+#start-btn:hover {
+    background-color: rgba(108, 218, 108, 0.411);
+}
+
+#stop-btn {
+    background-color: rgba(218, 108, 108, 0.281);
+    color: rgb(247, 6, 6);
+}
+
+#stop-btn:hover {
+    background-color: rgba(218, 108, 108, 0.411);
+}
+
+#reset-btn,
+#lap-btn {
+    background-color: rgba(169, 163, 163, 0.55);
+    color: #fff;
+}
+
+#reset-btn:hover,
+#lap-btn:hover {
+    background-color: rgba(169, 163, 163, 0.62);
+}
+
+
+#lapContainer {
+    margin-top: 20px;
+    font-size: 32px;
+    width: 450px;
+    border-top: 1px solid #fff;
+    font-family: 'Tinos', serif;
+}
+
+.lap {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+    border-bottom: 1px solid #fff;
+}
+
+#stop-btn {
+    display: none;
+}
+
+#lap-btn {
+    display: none;
+}
+
+
+@media only screen and (max-width: 450px) {
+    .digit {
+        font-size: 64px;
+    }
+    .btn{
+        font-size: 18px;
+    }
+    #lapContainer {
+        width: 100%;
+        font-size: 22px;
+    }
+
+}
